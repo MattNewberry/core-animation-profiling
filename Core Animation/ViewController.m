@@ -116,6 +116,7 @@
     
     if(_bitmap.on) {
         UIGraphicsBeginImageContextWithOptions(_scrollView.contentSize, YES, [UIScreen mainScreen].scale);
+        _scrollView.layer.backgroundColor = [UIColor whiteColor].CGColor;
         
         CGRect cachedFrame = _scrollView.frame;
         _scrollView.frame = CGRectMake(0, 0, _scrollView.contentSize.width, _scrollView.contentSize.height);
